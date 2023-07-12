@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NavLinks } from '../constants';
 import AuthProviders from './AuthProviders';
 
-const Navbar = (): FC => {
+const Navbar = () => {
   const session = {};
 
   const renderLinks = () => {
