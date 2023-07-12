@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-const Home = (): FC => {
+const Home = () => {
   return (
     <section className="flexStart flex-col paddings mb-16">
       <h1>1</h1>
