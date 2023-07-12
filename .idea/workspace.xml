@@ -11,11 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6667578-a2cf-4c2c-b594-127684bc51e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hearth-purple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hearth-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hearth.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo-purple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/magnifying-glass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/next copy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pencile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plus-round.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/profile-post.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/socials.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vercel copy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +53,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -59,19 +88,29 @@
     </option>
   </component>
   <component name="ProjectId" id="2SToOpoKJsyfK1ptErZ58m7XwSC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="ts.external.directory.path" value="C:\Users\Shevchenko\Documents\Example\next-js-jsm\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shevchenko\Documents\Example\next-js-jsm\app" />
+      <recent name="C:\Users\Shevchenko\Documents\Example\next-js-jsm" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689179902266</updated>
       <workItem from="1689179904031" duration="560000" />
-      <workItem from="1689180470705" duration="1011000" />
+      <workItem from="1689180470705" duration="2444000" />
     </task>
     <servers />
   </component>
@@ -101,6 +140,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1689180467793">
