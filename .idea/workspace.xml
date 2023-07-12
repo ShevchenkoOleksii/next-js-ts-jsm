@@ -11,38 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6667578-a2cf-4c2c-b594-127684bc51e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/arrow-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/eye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hearth-purple.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hearth-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hearth.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo-purple.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/magnifying-glass.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/minus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/next copy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pencile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/plus-round.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/profile-post.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/save.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/socials.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vercel copy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -123,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689179902266</updated>
       <workItem from="1689179904031" duration="560000" />
-      <workItem from="1689180470705" duration="2444000" />
+      <workItem from="1689180470705" duration="4021000" />
     </task>
     <servers />
   </component>
@@ -145,6 +118,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="401" y="37" key="#TypeScript" timestamp="1689183646503">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="401" y="37" key="#TypeScript/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1689183646503" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1689180467793">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
