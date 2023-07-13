@@ -11,18 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6667578-a2cf-4c2c-b594-127684bc51e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafbase/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/session.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthProviders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AuthProviders.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafbase/.env" beforeDir="false" afterPath="$PROJECT_DIR$/grafbase/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafbase/grafbase.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafbase/grafbase.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +104,7 @@
       <workItem from="1689251088367" duration="6938000" />
       <workItem from="1689258191157" duration="775000" />
       <workItem from="1689259006672" duration="435000" />
-      <workItem from="1689259691566" duration="4774000" />
+      <workItem from="1689259691566" duration="7046000" />
     </task>
     <servers />
   </component>
