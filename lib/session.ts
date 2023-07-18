@@ -4,30 +4,34 @@ import { AdapterUser } from 'next-auth/adapters';
 import GoogleProvider from "next-auth/providers/google";
 import jsonwebtoken from 'jsonwebtoken'
 import { JWT } from "next-auth/jwt";
-import { SessionInterface, UserProfile } from '../common.types';
 import { createUser, getUser } from './actions';
-import { OAuthUserConfig } from 'next-auth/providers';
+import { SessionInterface, UserProfile } from '../common.types';
+
+// import { OAuthUserConfig } from 'next-auth/providers';
 
 export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    } as OAuthUserConfig<any>),
+    }),
   ],
   jwt: {
-    encode: ({ secret, token }) => {
-      return jsonwebtoken.sign(
+    encode: async ({ secret, token }) => {
+      const encodedToken = jsonwebtoken.sign(
         {
           ...token,
           iss: "grafbase",
           exp: Math.floor(Date.now() / 1000) + 60 * 60,
         },
-        secret,
+        secret
       );
+
+      return encodedToken;
     },
     decode: async ({ secret, token }) => {
-      return jsonwebtoken.verify(token!, secret) as JWT;
+      const decodedToken = jsonwebtoken.verify(token!, secret);
+      return decodedToken as JWT;
     },
   },
   theme: {
@@ -40,13 +44,15 @@ export const authOptions: NextAuthOptions = {
 
       try {
         const data = await getUser(email) as { user?: UserProfile };
-        return {
+        const newSession = {
           ...session,
           user: {
             ...session.user,
             ...data?.user,
           },
         };
+
+        return newSession;
       } catch (e) {
         console.log(e);
         return session;
@@ -73,6 +79,8 @@ export const authOptions: NextAuthOptions = {
   },
 };
 
-export const getCurrentUser = async () => {
-  return await getServerSession(authOptions) as SessionInterface;
-};
+export async function getCurrentUser() {
+  const session = await getServerSession(authOptions) as SessionInterface;
+
+  return session;
+}
