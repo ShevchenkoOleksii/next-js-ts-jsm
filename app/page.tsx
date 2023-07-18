@@ -29,7 +29,7 @@ type ProjectSearch = {
 // export const revalidate = 0;
 
 const Home = async ({ searchParams: { category, endcursor } }: Props) => {
-  const data = await fetchAllProjects(category, endcursor) as ProjectSearch;
+  const data = await fetchAllProjects(category, endcursor);
   console.log('data___________________', data);
   //3:15:44
   const projectsToDisplay = data?.projectSearch?.edges || [];
