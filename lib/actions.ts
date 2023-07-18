@@ -1,5 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
-import { createUserMutation, getUserQuery, createProjectMutation, updateProjectMutation, projectsQuery } from '../graphql';
+import { createUserMutation, getUserQuery, createProjectMutation, projectsQuery } from '../graphql';
 import { ProjectForm } from '../common.types';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -9,7 +9,15 @@ const isProduction = process.env.NODE_ENV === 'production';
 const apiUrl = process.env.NEXT_PUBLIC_GRAFBASE_API_URL_V2 || '';
 const apiKey = process.env.NEXT_PUBLIC_GRAFBASE_API_KEY_V2 || '';
 const serverUrl = isProduction ? process.env.NEXT_PUBLIC_SERVER_URL : 'http://localhost:3000';
+// const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL;
 const client = new GraphQLClient(apiUrl);
+
+console.log('isProduction_14: ', isProduction);
+console.log('serverUrl_15', serverUrl);
+console.log({
+  apiUrl,
+  apiKey,
+})
 
 export const fetchToken = async () => {
   try {
@@ -36,8 +44,8 @@ export const uploadImage = async (imagePath: string) => {
 
 const makeGraphQLRequest = async (query: string, variables = {}) => {
   try {
-    console.log('variables', variables);
-    console.log('query', query);
+    // console.log('variables', variables);
+    // console.log('query', query);
     return await client.request(query, variables);
   } catch (e) {
     console.log(e);
@@ -45,9 +53,9 @@ const makeGraphQLRequest = async (query: string, variables = {}) => {
   }
 };
 
-export const fetchAllProjects = async (category?: string | null, endcursor?: string | null) => {
+export const fetchAllProjects = (category?: string | null, endcursor?: string | null) => {
   client.setHeader("x-api-key", apiKey);
-  console.log('category____________________________', category);
+  console.log('fetchAllProjects_category: ', category);
   return makeGraphQLRequest(projectsQuery, { category, endcursor });
 };
 
@@ -67,7 +75,7 @@ export const createUser = (name: string, email: string, avatarUrl: string) => {
       avatarUrl,
     },
   };
-
+  console.log('createUser_variables_71: ', variables);
   return makeGraphQLRequest(createUserMutation, variables);
 };
 
@@ -86,38 +94,38 @@ export const createNewProject = async (form: ProjectForm, creatorId: string, tok
         }
       }
     };
-
+    console.log('variables 90____________________', variables)
     return makeGraphQLRequest(createProjectMutation, variables);
   }
 };
 
-export const updateProject = async (form: ProjectForm, projectId: string, token: string) => {
-  function isBase64DataURL(value: string) {
-    const base64Regex = /^data:image\/[a-z]+;base64,/;
-    return base64Regex.test(value);
-  }
-
-  let updatedForm = { ...form };
-
-  const isUploadingNewImage = isBase64DataURL(form.image);
-
-  if (isUploadingNewImage) {
-    const imageUrl = await uploadImage(form.image);
-
-    if (imageUrl.url) {
-      updatedForm = { ...updatedForm, image: imageUrl.url };
-    }
-  }
-
-  client.setHeader("Authorization", `Bearer ${token}`);
-
-  const variables = {
-    id: projectId,
-    input: updatedForm,
-  };
-
-  return makeGraphQLRequest(updateProjectMutation, variables);
-};
+// export const updateProject = async (form: ProjectForm, projectId: string, token: string) => {
+//   function isBase64DataURL(value: string) {
+//     const base64Regex = /^data:image\/[a-z]+;base64,/;
+//     return base64Regex.test(value);
+//   }
+//
+//   let updatedForm = { ...form };
+//
+//   const isUploadingNewImage = isBase64DataURL(form.image);
+//
+//   if (isUploadingNewImage) {
+//     const imageUrl = await uploadImage(form.image);
+//
+//     if (imageUrl.url) {
+//       updatedForm = { ...updatedForm, image: imageUrl.url };
+//     }
+//   }
+//
+//   client.setHeader("Authorization", `Bearer ${token}`);
+//
+//   const variables = {
+//     id: projectId,
+//     input: updatedForm,
+//   };
+//
+//   return makeGraphQLRequest(updateProjectMutation, variables);
+// };
 
 // export const deleteProject = (id: string, token: string) => {
 //   client.setHeader("Authorization", `Bearer ${token}`);

@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d6667578-a2cf-4c2c-b594-127684bc51e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafbase/grafbase.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafbase/grafbase.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +75,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\Shevchenko\Documents\Example\next-js-jsm\node_modules\typescript\lib" />
   </component>
@@ -108,7 +109,9 @@
       <workItem from="1689259691566" duration="9440000" />
       <workItem from="1689335997062" duration="9395000" />
       <workItem from="1689616001188" duration="11344000" />
-      <workItem from="1689670237760" duration="8914000" />
+      <workItem from="1689670237760" duration="10799000" />
+      <workItem from="1689682635756" duration="700000" />
+      <workItem from="1689683415995" duration="1177000" />
     </task>
     <servers />
   </component>
@@ -148,6 +151,22 @@
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/1366.-127.1680.1020@0.0.1366.738" timestamp="1689195852174" />
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1689180467793" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1689682676062">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.-127.1680.1020@0.0.1366.738" timestamp="1689682676062" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1689682676062">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.-127.1680.1020@0.0.1366.738" timestamp="1689682676062" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1689682676062">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.-127.1680.1020@0.0.1366.738" timestamp="1689682676062" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1689682676062">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.-127.1680.1020@0.0.1366.738" timestamp="1689682676062" />
     <state x="450" y="71" key="RollbackChangesDialog" timestamp="1689251429702">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
