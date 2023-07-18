@@ -8,7 +8,7 @@ import FormField from './FormField';
 import CustomMenu from './CustonMenu';
 import { categoryFilters } from '../constants';
 import Button from './Button';
-import { createNewProject, fetchToken, updateProject } from '../lib/actions';
+import { createNewProject, fetchToken } from '../lib/actions';
 
 type Props = {
   type: string,
