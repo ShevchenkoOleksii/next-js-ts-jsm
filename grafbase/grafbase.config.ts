@@ -90,6 +90,8 @@ export default config({
   schema: g,
   auth: {
     providers: [jwt],
-    rules: (rules: AuthRules) => rules.private(),
+    rules: (rules) => {
+      rules.private();
+    },
   }
-} as ConfigInput);
+});
