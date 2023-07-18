@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6667578-a2cf-4c2c-b594-127684bc51e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       <workItem from="1689259691566" duration="9440000" />
       <workItem from="1689335997062" duration="9395000" />
       <workItem from="1689616001188" duration="11344000" />
-      <workItem from="1689670237760" duration="6035000" />
+      <workItem from="1689670237760" duration="6764000" />
     </task>
     <servers />
   </component>
